@@ -15,3 +15,19 @@
         height: auto;
         float: right;
     }
+
+    .flex_test {
+        display: flex;
+        border: 2px solid black;
+        width: 1000px;
+        height: 800px;
+        justify-content: space-evenly;
+    }
+
+    .flex_test div {
+        width: 200px;
+        height: 400px;
+        background-color: rgb(239, 173, 86);
+        border: 1px solid rgb(5, 193, 193);
+
+    }
