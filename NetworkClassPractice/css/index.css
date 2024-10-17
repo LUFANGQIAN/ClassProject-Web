@@ -21,7 +21,9 @@
         border: 2px solid black;
         width: 1000px;
         height: 800px;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
+        flex-direction: column;
+
     }
 
     .flex_test div {
