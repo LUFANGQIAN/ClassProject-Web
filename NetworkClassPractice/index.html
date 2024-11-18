@@ -1,23 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网课测试场</title>
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-<body>
-    <div class="bigbox">
-        <div class="left"><img src="./img/logo.jpg" alt=""></div>
-        <div class="right"><img src="./img/banner1.jpg" alt=""></div>
-    </div>
+    <title>盒子布局示例</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
 
-    <div class="flex_test">
-        
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
+        .large-box {
+            width: 300px;
+            height: 600px;
+            background-image: linear-gradient(to bottom right,red 60%,green 40%);
+            position: relative;
+            /* 设置相对定位以便内部元素绝对定位 */
+            border-radius: 40%;
+        }
+
+        .small-box {
+            width: 200px;
+            /* 举例，假设小盒子宽高都是500px */
+            height: 200px;
+            background-image:repeating-radial-gradient(circle at 50% 50%,blue,yellow);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* 使用translate调整到绝对中心 */
+            border-radius: 500%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="large-box">
+        <div class="small-box"></div>
     </div>
 </body>
+
 </html>

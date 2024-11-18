@@ -1,0 +1,21 @@
+.bgi{
+    width: 1000px;
+    height:1000px;
+    background-color: antiquewhite;
+    background-image: url(/img/logo.jpg);
+    background-repeat:no-repeat;
+    /* background-position: right bottom; */
+    /* background-size: contain; */
+    background-attachment: fixed;
+}
+
+.bac{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top:100px;
+    left:100px;
+    background-color: blue;
+    overflow: scroll;
+}
+
